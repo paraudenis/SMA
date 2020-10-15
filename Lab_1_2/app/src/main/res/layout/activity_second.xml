@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    android:layout_gravity="center"
+    tools:context=".SecondActivity"
+
+
+    <TextView
+        android:id="@+id/textbox"
+        android:layout_above="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/example_text"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_above="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_centerInParent="true"
+        android:hint="Enter Text"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Press to change text"
+        />
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_below="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="First Activity"
+        />
+
+    <Button
+        android:id="@+id/button_third"
+        android:layout_below="@+id/button_first"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Third Activity"
+        />
+</RelativeLayout>
